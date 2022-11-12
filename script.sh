@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Making images... "
 
 docker build -t ozzysp/projeto-backend:1.0 backend/.
