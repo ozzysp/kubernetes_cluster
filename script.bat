@@ -9,3 +9,13 @@ docker push ozzysp/projeto-backend:1.0
 docker push ozzysp/projeto-database:1.0
 
 echo "Done push files"
+echo "Making services at Kubernetes Cluster... "
+
+kubectl apply -f ./services.yml
+
+echo "Making deployments... "
+
+kubectl apply -f ./deployment.yml 
+
+echo "All done!!!"
+
